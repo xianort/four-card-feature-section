@@ -1,0 +1,14 @@
+# Avoid images
+**/*.{jpg,jpeg,png,svg}
+
+# Avoid node_modules
+node_modules
+
+# Avoid lock files
+**/*lock*
+
+# Avoid parcel cache
+.parcel-cache
+
+# Avoid build directory
+dist
