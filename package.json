@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A four card feature section.",
   "private": "true",
+  "source": "./src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
