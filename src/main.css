@@ -18,3 +18,22 @@
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
 }
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-grey-500;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+}
