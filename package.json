@@ -8,7 +8,8 @@
     "start": "parcel",
     "build": "parcel build",
     "format-all": "prettier --write .",
-    "format-check": "prettier --check ."
+    "format-check": "prettier --check .",
+    "convert-to-oklch": "convert-to-oklch -p 5 ./src/main.css"
   },
   "keywords": [],
   "author": "xianort",
