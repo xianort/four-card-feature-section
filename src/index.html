@@ -23,10 +23,12 @@
 
     <link rel="stylesheet" href="./main.css" />
   </head>
-  <body class="px-6 py-10">
+  <body
+    class="mx-auto min-h-dvh max-w-md px-6 py-10 md:max-w-3xl lg:flex lg:max-w-6xl lg:place-items-center"
+  >
     <main class="space-y-14">
-      <div class="space-y-4 text-center">
-        <hgroup class="space-y-1 text-2xl">
+      <div class="space-y-4 text-center lg:mx-auto lg:max-w-xl lg:space-y-5">
+        <hgroup class="space-y-1 text-2xl lg:text-4xl">
           <p class="font-extralight">Reliable, efficient delivery</p>
           <h1>Powered by Technology</h1>
         </hgroup>
@@ -35,9 +37,11 @@
           points to ensure that your project is successful
         </p>
       </div>
-      <div class="space-y-8">
+      <div
+        class="space-y-8 md:grid md:grid-cols-2 md:gap-8 md:space-y-0 lg:grid-cols-3 lg:grid-rows-2 lg:items-center"
+      >
         <div
-          class="relative space-y-10 overflow-hidden rounded-lg p-8 pb-12 shadow-xl"
+          class="relative space-y-10 overflow-hidden rounded-lg p-8 pb-12 shadow-xl lg:row-span-full"
         >
           <span
             class="absolute top-0 right-0 left-0 h-1 bg-cyan"
@@ -47,7 +51,12 @@
             <h2>Supervisor</h2>
             <p>Monitors activity to identify project roadblocks</p>
           </div>
-          <img src="../images/icon-supervisor.svg" alt="" class="ml-auto" />
+          <img
+            src="../images/icon-supervisor.svg"
+            alt=""
+            class="ml-auto"
+            aria-hidden="true"
+          />
         </div>
         <div
           class="relative space-y-10 overflow-hidden rounded-lg p-8 pb-12 shadow-xl"
@@ -63,7 +72,12 @@
               project
             </p>
           </div>
-          <img src="../images/icon-team-builder.svg" alt="" class="ml-auto" />
+          <img
+            src="../images/icon-team-builder.svg"
+            alt=""
+            class="ml-auto"
+            aria-hidden="true"
+          />
         </div>
         <div
           class="relative space-y-10 overflow-hidden rounded-lg p-8 pb-12 shadow-xl"
@@ -76,10 +90,15 @@
             <h2>Karma</h2>
             <p>Regularly evaluates our talent to ensure quality</p>
           </div>
-          <img src="../images/icon-karma.svg" alt="" class="ml-auto" />
+          <img
+            src="../images/icon-karma.svg"
+            alt=""
+            class="ml-auto"
+            aria-hidden="true"
+          />
         </div>
         <div
-          class="relative space-y-10 overflow-hidden rounded-lg p-8 pb-12 shadow-xl"
+          class="relative space-y-10 overflow-hidden rounded-lg p-8 pb-12 shadow-xl lg:col-start-3 lg:row-span-full"
         >
           <span
             class="absolute top-0 right-0 left-0 h-1 bg-blue"
@@ -91,7 +110,12 @@
               Uses data from past projects to provide better delivery estimates
             </p>
           </div>
-          <img src="../images/icon-calculator.svg" alt="" class="ml-auto" />
+          <img
+            src="../images/icon-calculator.svg"
+            alt=""
+            class="ml-auto"
+            aria-hidden="true"
+          />
         </div>
       </div>
     </main>
