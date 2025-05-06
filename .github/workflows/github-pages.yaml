@@ -1,0 +1,51 @@
+name: Build and Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**/*
+      - postcssrc.json
+      - ".github/workflows/CD.yaml"
+      - package.json
+      - pnpm-lock.yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22.x]
+    env:
+      PARCEL_WORKER_BACKEND: process
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+      - name: Use node version ${{matrix.node}}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{matrix.node}}
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build project
+        run: pnpm run build
+      - uses: actions/upload-pages-artifact@v3
+        id: deployment
+        with:
+          path: ./dist/
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
