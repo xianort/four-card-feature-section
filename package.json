@@ -13,6 +13,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
+    "build-unoptimized": "parcel build --no-optimize",
     "format-all": "prettier --write .",
     "format-check": "prettier --check .",
     "convert-to-oklch": "convert-to-oklch -p 5 ./src/main.css"
