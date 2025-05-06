@@ -11,6 +11,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.1.4
         version: 4.1.4
+      convert-to-oklch:
+        specifier: ^1.2.8
+        version: 1.2.8
       parcel:
         specifier: ^2.14.4
         version: 2.14.4(@swc/helpers@0.5.17)(postcss@8.5.3)(svgo@3.3.2)
@@ -656,6 +659,9 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
+  colorjs.io@0.4.0:
+    resolution: {integrity: sha512-AUKG9GCDSHsFRUnxGrEMCm6nq6lxddnDvD0avmsy/klCEk68htpqgl9IERGtGoxaGJlr7uP5wmD381gY2uG8hw==}
+
   commander@12.1.0:
     resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
     engines: {node: '>=18'}
@@ -663,6 +669,15 @@ packages:
   commander@7.2.0:
     resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
     engines: {node: '>= 10'}
+
+  commander@9.5.0:
+    resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
+    engines: {node: ^12.20.0 || >=14}
+
+  convert-to-oklch@1.2.8:
+    resolution: {integrity: sha512-u+OfBsZcK0CPQlFkyjmsl+oIb9jiw7zCSOh9cL1di+hR6aytuTTSKc0VllxeVhV2Z6sa0sI4r/BCDtpBqQ+Qlg==}
+    engines: {node: '>=16'}
+    hasBin: true
 
   cosmiconfig@9.0.0:
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
@@ -2096,9 +2111,20 @@ snapshots:
 
   color-name@1.1.4: {}
 
+  colorjs.io@0.4.0: {}
+
   commander@12.1.0: {}
 
   commander@7.2.0: {}
+
+  commander@9.5.0: {}
+
+  convert-to-oklch@1.2.8:
+    dependencies:
+      colorjs.io: 0.4.0
+      commander: 9.5.0
+      picocolors: 1.1.1
+      postcss: 8.5.3
 
   cosmiconfig@9.0.0:
     dependencies:
