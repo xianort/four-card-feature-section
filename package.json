@@ -36,6 +36,7 @@
     "tailwindcss": "^4.1.4"
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.css": "pnpm run convert-to-oklch",
+    "*": "prettier --write"
   }
 }
