@@ -14,6 +14,9 @@ importers:
       convert-to-oklch:
         specifier: ^1.2.8
         version: 1.2.8
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       parcel:
         specifier: ^2.14.4
         version: 2.14.4(@swc/helpers@0.5.17)(postcss@8.5.3)(svgo@3.3.2)
@@ -829,6 +832,11 @@ packages:
 
   htmlparser2@9.1.0:
     resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -2260,6 +2268,8 @@ snapshots:
       domhandler: 5.0.3
       domutils: 3.2.2
       entities: 4.5.0
+
+  husky@9.1.7: {}
 
   import-fresh@3.3.1:
     dependencies:
