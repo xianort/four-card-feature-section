@@ -4,6 +4,12 @@
   "description": "A four card feature section.",
   "private": "true",
   "source": "./src/index.html",
+  "browserslist": "defaults",
+  "targets": {
+    "default": {
+      "publicUrl": "."
+    }
+  },
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
