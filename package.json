@@ -37,6 +37,6 @@
   },
   "lint-staged": {
     "*.css": "pnpm run convert-to-oklch",
-    "*": "prettier --write"
+    "*.{css,html,json,md}": "prettier --write"
   }
 }
