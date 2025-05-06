@@ -6,7 +6,7 @@ on:
     paths:
       - src/**/*
       - postcssrc.json
-      - ".github/workflows/CD.yaml"
+      - ".github/workflows/github-pages.yaml"
       - package.json
       - pnpm-lock.yaml
 jobs:
