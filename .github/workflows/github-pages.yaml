@@ -17,6 +17,7 @@ jobs:
         node: [22.x]
     env:
       PARCEL_WORKER_BACKEND: process
+      HUSKY: 0
     steps:
       - uses: actions/checkout@v4
       - name: Install pnpm
